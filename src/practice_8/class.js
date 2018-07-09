@@ -10,15 +10,17 @@ export default class Class{
     getDisplayName(){
         return `Class ${this.number}`;
     }
-    assignLeader(classLeader){
-            this.leader = classLeader;
+    
+    assignLeader(student) {
+        if (student && student.klass.equal(this)) {
+            this.leader = student;
+        } 
     }
-    isEqual(klass) {
+    equal(klass) {
         return klass && this.number == klass.number;
     }
-    isLeader(student)
-    {
-            return this.leader && student && student.isEqual(this.leader);
+    isLeader(student){
+            return this.leader && student && student.equal(this.leader);
     }
     
 }

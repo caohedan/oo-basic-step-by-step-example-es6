@@ -10,17 +10,23 @@ export default class Class{
     getDisplayName(){
         return `Class ${this.number}`;
     }
-    assignLeader(classLeader){
-            this.leader = classLeader;
-    }
-    isEqual(klass) {
+
+    equal(klass) {
         return klass && this.number == klass.number;
     }
     isLeader(student){
-            return this.leader && student && student.isEqual(this.leader);
+            return this.leader && student && student.equal(this.leader);
     }
-    appendMember(){
+    assignLeader(student) {
+        if (student && student.klass.equal(this)) {
+            this.leader = student;
+        } else {
+            console.log("It is not one of us.");
+        }
+    }
 
+    appendMember(student) {
+        student.klass = this;
     }
 }
 

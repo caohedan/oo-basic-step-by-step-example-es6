@@ -1,9 +1,8 @@
 "use strict";
 import Person from "../../src/practice_9/person.js";
 export default  class Student extends Person{
-    constructor(id,name,age,klass)
-    {
-        super(id,name,age);
+    constructor(id, name, age, klass) {
+        super(id, name, age);
         this.klass = klass;
     }
     introduce() {
@@ -19,12 +18,8 @@ export default  class Student extends Person{
     {
         return this.klass;
     }
-    isEqual(student) {
+    equal(student) {
         return student && this.id === student.id;
     }
 }
-
-
-
-
 

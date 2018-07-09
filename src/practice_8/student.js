@@ -19,7 +19,7 @@ export default  class Student extends Person{
     {
         return this.klass;
     }
-    isEqual(student) {
+    equal(student) {
         return student && this.id === student.id;
     }
 }
