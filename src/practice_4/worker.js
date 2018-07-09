@@ -10,8 +10,6 @@ export default class Worker extends Person{
       }
 }
 
-exports["default"] = Worker;
-module.exports = exports["default"];
 
 
 
