@@ -1,5 +1,5 @@
 "use strict";
-import Person from "../../src/practice_4/person.js";
+import Person from "../../src/practice_6/person.js";
 export default  class Student extends Person{
     constructor(name,age,klass)
     {
@@ -10,7 +10,6 @@ export default  class Student extends Person{
         return super.introduce()+" I am a Student. I am at Class "+this.klass+".";
     }
 }
-
 
 
 
