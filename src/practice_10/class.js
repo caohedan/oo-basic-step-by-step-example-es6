@@ -24,7 +24,6 @@ export default class Class{
             console.log("It is not one of us.");
         }
     }
-
     appendMember(student) {
         student.klass = this;
     }
