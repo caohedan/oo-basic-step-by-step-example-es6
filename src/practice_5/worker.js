@@ -1,5 +1,5 @@
 "use strict";
-import Person from "../../src/practice_4/person.js";
+import Person from "../../src/practice_5/person.js";
 export default class Worker extends Person{
     constructor(name,age)
     {
