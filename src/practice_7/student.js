@@ -1,6 +1,5 @@
 "use strict";
 import Person from "../../src/practice_7/person.js";
-import Class from "../../src/practice_7/class.js";
 export default  class Student extends Person{
     constructor(name,age,klass)
     {

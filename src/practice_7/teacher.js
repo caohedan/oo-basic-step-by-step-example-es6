@@ -14,7 +14,7 @@ export default  class Teacher extends Person{
     }
     introduceWith(student)
     {
-        if(student.getClass() === this.klass)
+        if(this.klass.isEqual(student.getClass()))
         return super.introduce()+` I am a Teacher. I teach ${student.getName()}.`
         else
         return super.introduce()+` I am a Teacher. I don't teach ${student.getName()}.`

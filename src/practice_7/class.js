@@ -9,4 +9,7 @@ export default class Class{
     getDisplayName(){
         return `Class ${this.number}`;
     }
+    isEqual(klass) {
+        return klass && this.number == klass.number;
+    }
 }
